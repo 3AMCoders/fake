@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in your cccount</title>
+    <link href="css/signin.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="img/braclogo.png" height="50px" width="150px"></a>
+        <div style="text-align: center;font-size: 30px;color: white;font-family:  cursive;">Realtime Data Collection
+            System</div>
+    </header>
+    <div class="body">
+        <fieldset class="Fieldset">
+            <legend><b>User Login</b></legend>
+            <form name="login" method="POST">
+                User ID:<br>
+                <input type="text" name="user_id" required><br><br>
+                Password:<br>
+                <input type="password" name="password" required><br><br><br>
+
+                <input class="signinButton" onclick="check(this.form)" type="submit" value="Sign In">
+                <div style="margin-top: 3%;">
+                    Forget password? <a href="#" style="color: aqua;">click here</a>
+                </div>
+				
+            </form>
+        </fieldset>
+    </div>
+    <script language="javascript">
+        function check(form) /*function to check userid & password*/ {
+            /*the following code checkes whether the entered userid and password are matching*/
+            if (form.user_id.value === "teacher" && form.password.value === "1234") {
+                window.open('teacherDashboard.html') /*opens the target page while Id & password matches*/
+            } else if ((form.user_id.value == "admin" && form.password.value == "admin")) {
+                window.open('adminDashboard.html') /*opens the target page while Id & password matches*/
+            } else {
+                alert("Error Password or Username") /*displays error message*/
+            }
+
+        }
+    </script>
+    <footer class="footer">
+        &copy; 2019 BRAC
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/adminDashboard.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Realtime Data Collection System</h1>      
+    <p>BRAC Education Program</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="img/braclogowhite.png" style="height: 30px;width=100px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">Student Performance</a></li>
+        <li><a href="#">Attendance Dashboard</a></li>
+        <li><a href="#">Complain Box</a></li>
+        <li><a href="#">Teacher Profile</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>My Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="background-color:#334d50;">Total Student</div>
+        <div class="panel-body"><p class="dashbutton">1240</p></div>
+        <div class="panel-footer">##</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="background-color:#334d50;">Today's Presence</div>
+        <div class="panel-body"><p class="dashbutton">1120</p></div>
+        <div class="panel-footer">##</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="background-color:#334d50;">Number of School</div>
+        <div class="panel-body"><p class="dashbutton">300</p></div>
+        <div class="panel-footer">##</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Search">
+    <button type="button" class="btn btn-danger">Search</button>
+  </form>
+</footer>
+
+</body>
+</html>

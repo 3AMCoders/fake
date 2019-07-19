@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complain Box</title>
+        <link href="css/teacherComplainBox.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img src="img/braclogo.png" height="50px" width="150px"></a>
+            <div style="text-align: center;font-size: 30px;color: white;font-family:  cursive;">Realtime Data Collection System</div>
+        </header>
+        <div class="home">
+            <fieldset class="Fieldset">
+                <legend>Complain Box</legend>
+                <form action="teacherDashboard.html" method="GET">
+                    Enter Your Complain:<br>
+                    <textarea name="complain"  rows="4%" cols="25" placeholder="Complain" required>
+                    </textarea>
+                    <br><br>
+                    <input type="submit" class="submitbutton" value="Submit" onclick="func()">
+                    <script>
+                            function func(){
+                            alert('Marks entered successfully');
+                            }
+                        </script>
+                </form>
+            </fieldset>
+        </div>
+        <footer class="footer">
+            &copy; 2019 BRAC
+        </footer>
+    </body>
+</html>

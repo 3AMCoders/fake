@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Take Attendance
+        </title>
+        <link href="css/teacherAttendance.css" rel="stylesheet">
+        <script>
+            var clicks = 0;
+        
+            function myFunction(elem) {
+              if (document.getElementById(elem.id).style.backgroundColor == "red") {
+                document.getElementById(elem.id).style.backgroundColor = "green";
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+        
+              } else if (document.getElementById(elem.id).style.backgroundColor != "red")
+                document.getElementById(elem.id).style.backgroundColor = "red";
+            }
+          </script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img src="img/braclogo.png" height="50px" width="150px"></a>
+            <div style="text-align: center;font-size: 30px;color: white;font-family:  cursive;">Realtime Data Collection System</div>
+        </header>
+
+        <div class="home">
+            <fieldset class="fieldset">
+                <legend>Take Attendance</legend>
+                <form action="teacherDashboard.html" method="GET">
+            <div class="btn-group btn-matrix" id="ok">
+                <button type="button" class="btn btn-default" id="1" onclick="myFunction(this)">Button 01</button>
+                <button type="button" class="btn btn-default" id="2" onclick="myFunction(this)">Button 02</button>
+                <button type="button" class="btn btn-default" id="3" onclick="myFunction(this)">Button 03</button>
+                <button type="button" class="btn btn-default" id="4" onclick="myFunction(this)">Button 04</button>
+                <button type="button" class="btn btn-default" id="5" onclick="myFunction(this)">Button 05</button>
+                <button type="button" class="btn btn-default" id="6" onclick="myFunction(this)">Button 06</button>
+                <br>
+                <button type="button" class="btn btn-default" id="7" onclick="myFunction(this)">Button 07</button>
+                <button type="button" class="btn btn-default" id="8" onclick="myFunction(this)">Button 08</button>
+                <button type="button" class="btn btn-default" id="9" onclick="myFunction(this)">Button 09</button>
+                <button type="button" class="btn btn-default" id="10" onclick="myFunction(this)">Button 10</button>
+                <button type="button" class="btn btn-default" id="11" onclick="myFunction(this)">Button 11</button>
+                <button type="button" class="btn btn-default" id="12" onclick="myFunction(this)">Button 12</button>
+                <br>
+                <button type="button" class="btn btn-default" id="13" onclick="myFunction(this)">Button 13</button>
+                <button type="button" class="btn btn-default" id="14" onclick="myFunction(this)">Button 14</button>
+                <button type="button" class="btn btn-default" id="15" onclick="myFunction(this)">Button 15</button>
+                <button type="button" class="btn btn-default" id="16" onclick="myFunction(this)">Button 16</button>
+                <button type="button" class="btn btn-default" id="17" onclick="myFunction(this)">Button 17</button>
+                <button type="button" class="btn btn-default" id="18" onclick="myFunction(this)">Button 18</button>
+                <br>
+                <button type="button" class="btn btn-default" id="19" onclick="myFunction(this)">Button 19</button>
+                <button type="button" class="btn btn-default" id="20" onclick="myFunction(this)">Button 20</button>
+                <button type="button" class="btn btn-default" id="21" onclick="myFunction(this)">Button 21</button>
+                <button type="button" class="btn btn-default" id="22" onclick="myFunction(this)">Button 22</button>
+                <button type="button" class="btn btn-default" id="23" onclick="myFunction(this)">Button 23</button>
+                <button type="button" class="btn btn-default" id="24" onclick="myFunction(this)">Button 24</button>
+                <br>
+            
+                <button type="button" class="btn btn-default" id="25" onclick="myFunction(this)">Button 25</button>
+                <button type="button" class="btn btn-default" id="26" onclick="myFunction(this)">Button 26</button>
+                <button type="button" class="btn btn-default" id="27" onclick="myFunction(this)">Button 27</button>
+                <button type="button" class="btn btn-default" id="28" onclick="myFunction(this)">Button 28</button>
+                <button type="button" class="btn btn-default" id="29" onclick="myFunction(this)">Button 29</button>
+                <button type="button" class="btn btn-default" id="30" onclick="myFunction(this)">Button 30</button>
+                <br>
+                <button type="button" class="btn btn-default" id="31" onclick="myFunction(this)">Button 31</button>
+                <button type="button" class="btn btn-default" id="32" onclick="myFunction(this)">Button 32</button>
+                <button type="button" class="btn btn-default" id="33" onclick="myFunction(this)">Button 33</button>
+                <button type="button" class="btn btn-default" id="34" onclick="myFunction(this)">Button 34</button>
+                <button type="button" class="btn btn-default" id="35" onclick="myFunction(this)">Button 35</button>
+                <button type="button" class="btn btn-default" id="36" onclick="myFunction(this)">Button 36</button>
+              </div><br><br>
+              <h2>Total Present: <a id="clicks">0</a></h2><br><br>
+              <input class="button" type="submit" name="submit" value="Submit" onclick="func()">
+              <script>
+                    function func(){
+                    alert('Marks entered successfully');
+                    }
+                </script>
+              </form>
+            </fieldset>
+        </div>
+
+        <footer class="footer">
+                &copy; 2019 BRAC
+            </footer>
+    </body>
+</html>

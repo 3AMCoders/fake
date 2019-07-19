@@ -1,0 +1,31 @@
+{
+    "name": "Real time data collection System",
+    "short_name": "RTDCS",
+    "lang": "en-US",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "icons": [{
+            "src": "/Images/Icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/Images/Icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/Images/Icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/Images/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+
+    ],
+    "theme_color": "white",
+    "background_color": "white"
+}
